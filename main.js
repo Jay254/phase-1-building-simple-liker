@@ -28,7 +28,7 @@ function handleClick(event){
           }
         })
         .catch( (error) => {
-          error.innerText = error;
+          errorMessage.innerText = error;
           errorModal.classList.remove('hidden');
           setTimeout( () => {
             errorModal.classList.add('hidden');
